@@ -1,0 +1,26 @@
+# Netlify Deployment Configuration for AI MAN Studio
+# Project Type: Static HTML5 / CSS3 / Vanilla JavaScript (No framework build step required)
+
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*.mp4"
+  [headers.values]
+    Content-Type = "video/mp4"
+    Accept-Ranges = "bytes"
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/*.svg"
+  [headers.values]
+    Content-Type = "image/svg+xml"
+    Cache-Control = "public, max-age=604800"

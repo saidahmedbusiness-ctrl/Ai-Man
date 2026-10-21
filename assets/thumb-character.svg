@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="charBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="55%" stop-color="#0f1326" />
+      <stop offset="100%" stop-color="#080a12" />
+    </radialGradient>
+    <linearGradient id="holoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4D7CFE" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="skinShade" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#4D7CFE" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.5" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#charBg)" />
+  <!-- Dual Rim Studio Lights -->
+  <circle cx="260" cy="220" r="140" fill="#4D7CFE" opacity="0.22" filter="url(#softGlow)" />
+  <circle cx="540" cy="220" r="140" fill="#8B5CF6" opacity="0.22" filter="url(#softGlow)" />
+  <!-- Soundwave / Lip-sync Telemetry Ring -->
+  <ellipse cx="400" cy="250" rx="230" ry="230" fill="none" stroke="#4D7CFE" stroke-opacity="0.15" stroke-dasharray="6 8" stroke-width="1.5" />
+  <ellipse cx="400" cy="250" rx="185" ry="185" fill="none" stroke="#8B5CF6" stroke-opacity="0.2" stroke-width="1" />
+  <!-- Stylized Realistic AI Presenter Bust & Mesh -->
+  <g>
+    <!-- Shoulders / Jacket -->
+    <path d="M235 460 C250 375, 320 355, 400 355 C480 355, 550 375, 565 460 Z" fill="#111526" stroke="url(#holoBlue)" stroke-width="2" />
+    <!-- Neck -->
+    <rect x="372" y="300" width="56" height="65" rx="20" fill="#1e293b" stroke="#4D7CFE" stroke-opacity="0.4" />
+    <!-- Head Silhouette -->
+    <path d="M325 195 C325 120, 475 120, 475 195 C475 265, 445 320, 400 320 C355 320, 325 265, 325 195 Z" fill="url(#skinShade)" stroke="url(#holoBlue)" stroke-width="2.5" />
+    <!-- Facial Biometric Wireframe Overlay -->
+    <path d="M400 132 L400 320 M332 205 Q400 220 468 205 M345 250 Q400 268 455 250" stroke="#4D7CFE" stroke-opacity="0.3" stroke-width="1" fill="none" />
+    <!-- Glowing Eyes -->
+    <ellipse cx="368" cy="202" rx="14" ry="5" fill="#F5F7FF" opacity="0.9" />
+    <ellipse cx="432" cy="202" rx="14" ry="5" fill="#F5F7FF" opacity="0.9" />
+    <circle cx="368" cy="202" r="4" fill="#4D7CFE" />
+    <circle cx="432" cy="202" r="4" fill="#4D7CFE" />
+  </g>
+  <!-- Audio Waveform Bars (Voice Sync) -->
+  <g fill="#4D7CFE" opacity="0.75">
+    <rect x="130" y="235" width="4" height="30" rx="2" />
+    <rect x="142" y="220" width="4" height="60" rx="2" />
+    <rect x="154" y="240" width="4" height="20" rx="2" />
+    <rect x="642" y="240" width="4" height="20" rx="2" />
+    <rect x="654" y="220" width="4" height="60" rx="2" />
+    <rect x="666" y="235" width="4" height="30" rx="2" />
+  </g>
+  <text x="60" y="65" fill="#A4AAC0" font-family="sans-serif" font-size="12" letter-spacing="2">AI HUMAN AVATAR // NEURAL VOICE</text>
+</svg>

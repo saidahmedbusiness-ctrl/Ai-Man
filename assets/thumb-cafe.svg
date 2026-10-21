@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <!-- Luxury Warm Cafe Background Gradient -->
+    <radialGradient id="cafeBg" cx="50%" cy="42%" r="68%">
+      <stop offset="0%" stop-color="#3d2314" />
+      <stop offset="48%" stop-color="#1c1217" />
+      <stop offset="100%" stop-color="#080a12" />
+    </radialGradient>
+    <!-- Warm Golden Ambient Glow -->
+    <radialGradient id="amberLight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.55" />
+      <stop offset="60%" stop-color="#d97706" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#080a12" stop-opacity="0" />
+    </radialGradient>
+    <!-- Luxury Porcelain & Gold Cup Gradient -->
+    <linearGradient id="cupBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#272024" />
+      <stop offset="55%" stop-color="#151116" />
+      <stop offset="100%" stop-color="#09080c" />
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="35%" stop-color="#fde68a" />
+      <stop offset="65%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="cremaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+    <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.05" />
+      <stop offset="45%" stop-color="#fef3c7" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" />
+    </filter>
+    <filter id="steamBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#cafeBg)" />
+
+  <!-- Elegant Cafe Architectural Arches & Shelving in Background -->
+  <g stroke="#f59e0b" stroke-opacity="0.14" stroke-width="1.5" fill="none">
+    <path d="M110 370 L110 170 A95 95 0 0 1 300 170 L300 370" />
+    <path d="M500 370 L500 170 A95 95 0 0 1 690 170 L690 370" />
+    <line x1="110" y1="240" x2="300" y2="240" />
+    <line x1="500" y1="240" x2="690" y2="240" />
+  </g>
+
+  <!-- Warm Pendant Lamps & Bokeh Lights -->
+  <g>
+    <!-- Left Pendant -->
+    <line x1="205" y1="0" x2="205" y2="95" stroke="#d97706" stroke-opacity="0.45" stroke-width="2" />
+    <path d="M182 115 Q205 85 228 115 Z" fill="url(#goldTrim)" />
+    <circle cx="205" cy="122" r="9" fill="#fef3c7" />
+    <circle cx="205" cy="135" r="75" fill="url(#amberLight)" filter="url(#softBlur)" />
+
+    <!-- Right Pendant -->
+    <line x1="595" y1="0" x2="595" y2="85" stroke="#d97706" stroke-opacity="0.45" stroke-width="2" />
+    <path d="M572 105 Q595 75 618 105 Z" fill="url(#goldTrim)" />
+    <circle cx="595" cy="112" r="9" fill="#fef3c7" />
+    <circle cx="595" cy="125" r="75" fill="url(#amberLight)" filter="url(#softBlur)" />
+
+    <!-- Center Warm Spotlight -->
+    <ellipse cx="400" cy="270" rx="220" ry="145" fill="url(#amberLight)" filter="url(#softBlur)" />
+
+    <!-- Out-of-Focus Cafe Bokeh Circles -->
+    <circle cx="155" cy="195" r="18" fill="#fbbf24" opacity="0.16" filter="url(#softBlur)" />
+    <circle cx="255" cy="165" r="12" fill="#fde68a" opacity="0.2" filter="url(#softBlur)" />
+    <circle cx="640" cy="185" r="22" fill="#f59e0b" opacity="0.15" filter="url(#softBlur)" />
+    <circle cx="540" cy="160" r="14" fill="#fde68a" opacity="0.18" filter="url(#softBlur)" />
+    <circle cx="680" cy="260" r="10" fill="#4D7CFE" opacity="0.2" filter="url(#softBlur)" />
+    <circle cx="125" cy="275" r="12" fill="#4D7CFE" opacity="0.18" filter="url(#softBlur)" />
+  </g>
+
+  <!-- Luxury Dark Marble Table Surface -->
+  <g>
+    <polygon points="0,365 800,365 800,500 0,500" fill="#0d0b10" />
+    <line x1="0" y1="365" x2="800" y2="365" stroke="url(#goldTrim)" stroke-opacity="0.45" stroke-width="1.5" />
+    <!-- Subtle Marble Veins -->
+    <path d="M80 410 Q190 395 260 430 T450 425" fill="none" stroke="#fde68a" stroke-opacity="0.08" stroke-width="1.2" />
+    <path d="M520 395 Q610 420 730 405" fill="none" stroke="#fde68a" stroke-opacity="0.07" stroke-width="1" />
+    <!-- Warm Table Reflection -->
+    <ellipse cx="400" cy="395" rx="185" ry="26" fill="#000000" opacity="0.75" filter="url(#softBlur)" />
+    <ellipse cx="400" cy="402" rx="135" ry="14" fill="#f59e0b" opacity="0.18" filter="url(#softBlur)" />
+  </g>
+
+  <!-- Rising Soft Aromatic Steam Wisps -->
+  <g fill="none" stroke="url(#steamGrad)" stroke-linecap="round" filter="url(#steamBlur)">
+    <path d="M375 235 C345 190, 415 150, 380 95" stroke-width="8" />
+    <path d="M405 228 C435 180, 375 135, 415 78" stroke-width="10" />
+    <path d="M432 238 C455 198, 415 162, 440 115" stroke-width="6" />
+  </g>
+
+  <!-- Luxury Specialty Coffee Cup & Saucer -->
+  <g transform="translate(0, 6)">
+    <!-- Porcelain & Gold Saucer -->
+    <ellipse cx="400" cy="374" rx="148" ry="22" fill="#18131a" stroke="url(#goldTrim)" stroke-width="2" />
+    <ellipse cx="400" cy="370" rx="98" ry="12" fill="#0d0a0e" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1" />
+
+    <!-- Elegant Gold Cup Handle -->
+    <path d="M488 272 C542 268, 542 338, 476 342" fill="none" stroke="url(#goldTrim)" stroke-width="9" stroke-linecap="round" />
+    <path d="M488 279 C528 276, 528 330, 478 334" fill="none" stroke="#080a12" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Cup Body -->
+    <path d="M300 250 L500 250 C496 332, 462 368, 400 368 C338 368, 304 332, 300 250 Z" fill="url(#cupBody)" stroke="url(#goldTrim)" stroke-width="2" />
+
+    <!-- Luxury Gold Band Around Cup -->
+    <path d="M306 278 Q400 292 494 278" fill="none" stroke="url(#goldTrim)" stroke-width="3.5" />
+
+    <!-- Cup Rim & Specialty Espresso Crema with Latte Art -->
+    <ellipse cx="400" cy="250" rx="100" ry="20" fill="url(#cremaGrad)" stroke="url(#goldTrim)" stroke-width="3" />
+    <!-- Latte Art Rosetta / Heart -->
+    <path d="M400 242 C386 234, 372 246, 400 258 C428 246, 414 234, 400 242 Z" fill="#fef3c7" opacity="0.88" />
+    <path d="M382 248 Q400 255 418 248" fill="none" stroke="#fef3c7" stroke-width="2" opacity="0.7" />
+  </g>
+
+  <!-- Roasted Specialty Coffee Beans on Saucer / Marble -->
+  <g fill="#2b1204" stroke="#d97706" stroke-width="0.8">
+    <ellipse cx="285" cy="388" rx="9" ry="5.5" transform="rotate(-18 285 388)" />
+    <ellipse cx="305" cy="396" rx="8.5" ry="5" transform="rotate(14 305 396)" />
+    <ellipse cx="512" cy="392" rx="9" ry="5.5" transform="rotate(22 512 392)" />
+  </g>
+
+  <!-- Cinema Viewfinder Frame & Studio Label -->
+  <g stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5" fill="none">
+    <path d="M40 60 L40 40 L60 40" />
+    <path d="M760 60 L760 40 L740 40" />
+    <path d="M40 440 L40 460 L60 460" />
+    <path d="M760 440 L760 460 L740 460" />
+  </g>
+  <text x="60" y="65" fill="#fde68a" font-family="sans-serif" font-size="12" letter-spacing="2" opacity="0.85">LUXURY CAFE COMMERCIAL // SPECIALTY COFFEE AI</text>
+</svg>

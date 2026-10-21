@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="customBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1e2548" />
+      <stop offset="65%" stop-color="#0d1120" />
+      <stop offset="100%" stop-color="#080a12" />
+    </radialGradient>
+    <linearGradient id="prismGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4D7CFE" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#customBg)" />
+  <!-- Isometric Creative Nodes -->
+  <g stroke="url(#prismGrad)" stroke-width="2" fill="#111526" fill-opacity="0.75">
+    <polygon points="400,120 510,185 400,250 290,185" />
+    <polygon points="290,185 400,250 400,375 290,310" />
+    <polygon points="510,185 400,250 400,375 510,310" />
+  </g>
+  <!-- Orbiting Nodes -->
+  <circle cx="400" cy="250" r="165" fill="none" stroke="#4D7CFE" stroke-opacity="0.3" stroke-dasharray="5 7" />
+  <circle cx="235" cy="250" r="10" fill="#4D7CFE" />
+  <circle cx="565" cy="250" r="10" fill="#8B5CF6" />
+  <circle cx="400" cy="120" r="7" fill="#F5F7FF" />
+  <text x="60" y="65" fill="#A4AAC0" font-family="sans-serif" font-size="12" letter-spacing="2">BESPOKE PRODUCTION // CUSTOM AI</text>
+</svg>

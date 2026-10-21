@@ -1,0 +1,13 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/*.mp4
+  Content-Type: video/mp4
+  Accept-Ranges: bytes
+  Cache-Control: public, max-age=604800
+
+/assets/*.svg
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=604800
